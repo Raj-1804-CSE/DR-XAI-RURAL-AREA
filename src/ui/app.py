@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 from PIL import Image
 from src.preprocessing.image_processor import DRImageProcessor
-from src.model.architecture import DRClassifier
+from src.model.architecture import DREnsembleClassifier as DRClassifier
 import base64
 
 # --- Professional CSS for Enterprise Clinical Suite ---
