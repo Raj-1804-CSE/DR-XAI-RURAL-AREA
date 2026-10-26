@@ -87,7 +87,7 @@ def load_clinical_tools():
     except:
         status = "Pre-trained Ensemble"
 
-    target_layer = model.base_model.model_eff.net.features[-1] # Use EfficientNet layer for heatmap
+    target_layer = model.model_eff.net.features[-1] # Use EfficientNet layer for heatmap
     from src.xai.explainer import DRExplainer
     explainer = DRExplainer(model.model_eff, target_layer) # Explain based on the lead model
     processor = DRImageProcessor()
