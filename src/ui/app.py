@@ -43,7 +43,7 @@ model, explainer, processor = load_clinical_tools()
 
 # --- Sidebar Settings ---
 st.sidebar.header("Settings")
-confidence_threshold = st.sidebar.slider("Confidence Threshold", 0.0, 1.0, 0.5)
+confidence_threshold = st.sidebar.slider("Confidence Threshold", 0.0, 1.0, 0.5, key="conf_threshold_slider")
 st.sidebar.info("This tool is designed to assist clinicians, not replace them.")
 
 # --- Main Interface ---
