@@ -191,7 +191,7 @@ if uploaded_file is not None:
 
     with st.spinner("⚙️ AI analyzing retinal layers..."):
         temp_path = "temp_upload.jpg"
-        with open(temp_path, "wb") as f: f.write(uploaded_//uploaded_file.getbuffer())
+        with open(temp_path, "wb") as f: f.write(uploaded_file.getbuffer())
         processed_img = processor.preprocess(temp_path)
         input_tensor = torch.from_numpy(processed_img).permute(2, 0, 1).float().unsqueeze(0)
 
