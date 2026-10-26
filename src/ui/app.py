@@ -241,7 +241,7 @@ if uploaded_file is not None:
     pdf_content = f"Patient: {p_id} | Result: {severity} | Action: {action}"
     b64 = base64.b64encode(pdf_content.encode()).decode()
     st.markdown(f'<div style="text-align:center;"><a href="data:text/html;base64,{b64}" download="Report.html" style="text-decoration:none; background:#007AFF; color:white; padding:12px 30px; border-radius:25px; font-weight:600;">{L["download"]}</a></div>', unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_//allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
 else:
     st.markdown(f"""
