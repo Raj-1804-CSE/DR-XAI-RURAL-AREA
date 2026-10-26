@@ -260,4 +260,4 @@ if uploaded_file is not None:
     """, unsafe_allow_html=True)
 
 else:
-    st.markdown(f"<div style='text-align:center; padding:5rem; color:#64748B;'><h2>{L['no_img']}</h2><p>{L['tip']}</p></div>", unsafe_//allow_html=True)
+    st.markdown(f"<div style='text-align:center; padding:5rem; color:#64748B;'><h2>{L['no_img']}</h2><p>{L['tip']}</p></div>", unsafe_allow_html=True)
