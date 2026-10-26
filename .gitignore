@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv
+venv/
+ENV/
+
+# Data and Models (Too large for GitHub)
+data/
+models/*.pth
+models/*.h5
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+temp_upload.jpg
