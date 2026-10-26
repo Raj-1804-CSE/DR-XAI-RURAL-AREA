@@ -1,0 +1,13 @@
+# Core Dependencies
+torch
+torchvision
+numpy
+pandas
+opencv-python
+matplotlib
+seaborn
+scikit-learn
+captum
+streamlit
+pillow
+albumentations
