@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Diabetic Retinopathy Explainable AI (XAI)
 Project for diagnosing Diabetic Retinopathy in rural areas with explainable AI insights.
 
@@ -11,3 +12,7 @@ Project for diagnosing Diabetic Retinopathy in rural areas with explainable AI i
     - `xai/`: Implementation of explainability methods (e.g., Grad-CAM).
     - `ui/`: The user interface for clinicians.
 - `tests/`: Unit tests for data and model pipelines.
+=======
+# DR-XAI-RURAL-AREA
+Explainable AI for diabetic retinopathy patients in rural area  
+>>>>>>> 88f606b7c028b1aadebf84f00876ed7ded04fa07
