@@ -113,12 +113,19 @@ with st.sidebar:
     st.markdown("<p style='font-size:0.8rem; color:gray;'>v2.1.0 Stable | GPU: CPU-Inference</p>", unsafe_allow_html=True)
 
 # --- Main Interface ---
+st.markdown("### 📥 Image Acquisition")
+input_mode = st.radio("Select Input Method", ["Upload Image", "Capture from Camera"], horizontal=True)
+
 col_upload, col_info = st.columns([2, 1])
 
 with col_upload:
-    uploaded_file = st.file_uploader("Upload High-Resolution Fundus Image", type=["jpg", "jpeg", "png"])
+    if input_mode == "Upload Image":
+        uploaded_file = st.file_uploader("Upload High-Resolution Fundus Image", type=["jpg", "jpeg", "png"])
+    else:
+        uploaded_file = st.camera_input("Take a photo of the retinal scan")
 
 with col_info:
+
     st.markdown("""
     <div class="clinical-card">
         <h4 style='margin-top:0;'>📋 Scanning Protocol</h4>
